@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEN BJJ | Brazilian Jiu Jitsu - Aurora, Colorado</title>
     <meta name="description" content="DEN BJJ - Community-focused Brazilian Jiu Jitsu in Aurora, Colorado. Adult and kids classes built on exploration, self-discovery, and developing your own game.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+    <link rel="apple-touch-icon" href="favicon-192.png">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://denbjj.com">
+    <meta property="og:title" content="DEN BJJ | Brazilian Jiu Jitsu - Aurora, Colorado">
+    <meta property="og:description" content="A community built on exploration and self-discovery. Concept-based BJJ for adults and kids in Aurora, CO.">
+    <meta property="og:image" content="https://denbjj.com/logo_clear.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DEN BJJ | Brazilian Jiu Jitsu - Aurora, Colorado">
+    <meta name="twitter:description" content="A community built on exploration and self-discovery. Concept-based BJJ for adults and kids in Aurora, CO.">
+    <meta name="twitter:image" content="https://denbjj.com/logo_clear.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -358,6 +377,84 @@
             color: var(--text-dim);
         }
 
+        /* Philosophy section */
+        .philosophy {
+            position: relative;
+            max-width: 700px;
+            margin: 64px auto 0;
+            padding: 48px 40px;
+            border-left: 2px solid rgba(201, 168, 76, 0.3);
+            animation: fadeUp 0.8s 1.6s ease forwards;
+            opacity: 0;
+        }
+
+        .quote-mark {
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            font-family: 'Bebas Neue', serif;
+            font-size: 120px;
+            line-height: 1;
+            color: rgba(201, 168, 76, 0.15);
+            user-select: none;
+        }
+
+        .philosophy-text {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.5);
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            position: relative;
+            z-index: 1;
+            margin-top: 100px;
+            padding: 40px 20px 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            animation: fadeUp 0.8s 1.8s ease forwards;
+            opacity: 0;
+        }
+
+        .footer p {
+            margin: 6px 0;
+        }
+
+        .footer-lineage {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Corner accents */
+        .corner-accent {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgba(201, 168, 76, 0.15);
+            z-index: 0;
+        }
+
+        .corner-tl {
+            top: 0;
+            left: 0;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-br {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+
         /* Bottom line accent */
         .bottom-accent {
             position: fixed;
@@ -385,8 +482,22 @@
                 height: 300px;
             }
 
+            .philosophy {
+                padding: 32px 24px;
+                margin-top: 48px;
+            }
+
+            .quote-mark {
+                font-size: 80px;
+                left: -12px;
+            }
+
             .contact {
                 margin-top: 60px;
+            }
+
+            .footer {
+                margin-top: 80px;
             }
         }
 
@@ -402,6 +513,20 @@
 
             .hero {
                 padding: 30px 16px;
+            }
+
+            .philosophy {
+                padding: 24px 16px 24px 24px;
+                margin-top: 40px;
+            }
+
+            .philosophy-text {
+                font-size: 0.95rem;
+            }
+
+            .corner-accent {
+                width: 50px;
+                height: 50px;
             }
         }
     </style>
@@ -447,6 +572,16 @@
                 </div>
             </div>
 
+            <!-- Philosophy -->
+            <div class="philosophy">
+                <div class="quote-mark">"</div>
+                <p class="philosophy-text">
+                    Your jiu jitsu is yours to build. We don't drill endless techniques — 
+                    we explore concepts, play positional games, and give you the tools 
+                    to discover what works for your body, your mind, your game.
+                </p>
+            </div>
+
             <div class="contact">
                 <p class="contact-label">Get in touch</p>
                 <a href="mailto:nathan@denbjj.com">nathan@denbjj.com</a>
@@ -454,6 +589,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 DEN BJJ &mdash; All Rights Reserved</p>
+        <p class="footer-lineage">Rooted in the traditions of Brazilian Jiu Jitsu</p>
+    </footer>
+
+    <!-- Corner accents -->
+    <div class="corner-accent corner-tl"></div>
+    <div class="corner-accent corner-br"></div>
 
     <div class="bottom-accent"></div>
 </body>
