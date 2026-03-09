@@ -286,17 +286,22 @@
             text-align: center;
         }
 
-        .feature-icon {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-        }
-
         .feature-label {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: 400;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: var(--text-dim);
+            padding: 12px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            transition: all 0.3s ease;
+        }
+
+        .feature-label:hover {
+            border-color: rgba(201, 168, 76, 0.3);
+            background: rgba(201, 168, 76, 0.05);
         }
 
         /* Contact footer */
@@ -423,25 +428,21 @@
 
             <p class="description">
                 A community built on <em>exploration</em> and <em>self-discovery</em>. 
-                We give you the tools to develop your own jiu jitsu — 
-                all you need to grow is a partner.
+                We teach concepts and positions that empower you to 
+                develop your own jiu jitsu.
             </p>
 
             <div class="features">
                 <div class="feature">
-                    <div class="feature-icon">🥋</div>
                     <div class="feature-label">Adult Classes</div>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">👶</div>
                     <div class="feature-label">Kids Program</div>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">🧠</div>
                     <div class="feature-label">Concept Based</div>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">🤝</div>
                     <div class="feature-label">All Levels</div>
                 </div>
             </div>
@@ -449,7 +450,7 @@
             <div class="contact">
                 <p class="contact-label">Get in touch</p>
                 <a href="mailto:nathan@denbjj.com">nathan@denbjj.com</a>
-                <p class="location">📍 Aurora, CO</p>
+                <p class="location">Aurora, CO</p>
             </div>
         </div>
     </section>
